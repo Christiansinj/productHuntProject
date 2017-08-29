@@ -1,0 +1,29 @@
+{
+  "name": "productHuntProject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Christiansinj/productHuntProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Christiansinj/productHuntProject/issues"
+  },
+  "homepage": "https://github.com/Christiansinj/productHuntProject#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "nodemon": "^1.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.5.0",
+    "eslint-config-airbnb-base": "^11.3.2",
+    "eslint-plugin-import": "^2.7.0"
+  }
+}
