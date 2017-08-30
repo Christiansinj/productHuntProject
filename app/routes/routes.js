@@ -3,9 +3,8 @@ const express = require('express');
 const router = express.Router();
 
 
-router.get('/', (request, response) => {
-  response.render('hompage');
+router.get('/produit', (request, response) => {
+  response.render('list');
 });
-
 
 module.exports = router;
