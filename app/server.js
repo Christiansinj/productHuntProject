@@ -3,12 +3,17 @@ const router = require('./routes/routes');
 const path = require('path');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+
+mongoose.connect('mongodb://localhost/tousproduit', () => {
+	console.log('je suis connecter a mongo')}
+);
+
 
 const app = express();
 // Afficher un messages sur le navigateur
 
-// import du routeur
-app.use(router);
+
 
 // loger (morgan)
 
@@ -23,6 +28,10 @@ app.set('views', path.join(__dirname, 'views'));
 // localisation des fichier public statiques
 
 app.use(express.static(path.join(__dirname, 'public')));
+
+// import du routeur
+app.use(router);
+
 // ecouter le port 3000 sur le serveur
 
 app.listen(3000, () => {

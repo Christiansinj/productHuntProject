@@ -1,0 +1,11 @@
+extends ../layout
+
+block content
+	a(href='/produit/edit') ajouter un produit
+
+	h1 Liste des produit
+
+	ul
+		each produit in produits 
+			li #{ produit.nom }
+			li #{ produit.prenom }
